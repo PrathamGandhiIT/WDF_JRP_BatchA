@@ -1,64 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 15px;
+        }
+        input {
+            padding: 5px;
+            margin-top: 3px;
+        }
+        button {
+            padding: 6px 14px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
- <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background:#f4f4f4;
-            }
-            header {
-            background:#333;
-            color:white;
-            padding:15px;
-            text-align:center;
-            }
 
-               nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 12px;
-            }
-              nav a:hover {
-                text-decoration: underline;
-            }
-              </style>
-              <header>
-    <h1>Profile section</h1>
-    <nav>
-        <a href="Home.html">Home</a> | 
-        <a href="Login.html">Login</a> | 
-        <a href="StudentDashboard.html">Student Dashboard</a> | 
-        <a href="FacultyDashboard.html">Faculty Dashboard</a> | 
-        <a href="AdminDashboard.html">Admin Dashboard</a> | 
-        <a href="Courses.html">Courses</a> | 
-        <a href="Events.html">Events</a> | 
-        <a href="Forum.html">Forum</a> | 
-        <a href="CampusDirectory.html">Directory</a> | 
-        <a href="Profile.html">Profile</a>
+    <header>
+        <h1>Profile Section</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
     </header>
-</nav>
-    <hr>
 
-    <h2>Personal Information</h2>
-    <p><b>Name:</b> Student Name</p>
-    <p><b>ID Number:</b> 2026001</p>
-    <p><b>Department:</b> Information Technology</p>
-    <p><b>Email:</b> student@college.edu</p>
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Student Name</p>
+            <p><strong>ID Number:</strong> 2026001</p>
+            <p><strong>Department:</strong> Information Technology</p>
+            <p><strong>Email:</strong> student@college.edu</p>
+        </section>
 
-    <h3>Update Password</h3>
-    <form>
-        <p>
-            <label>New Password:</label><br>
-            <input type="password" name="newpass">
-        </p>
-        <p>
-            <button type="button">Update</button>
-        </p>
-    </form>
+        <section>
+            <h3>Update Password</h3>
+            <form>
+                <p>
+                    <label for="newpass">New Password:</label><br>
+                    <input type="password" id="newpass" name="newpass">
+                </p>
+                <p>
+                    <button type="button">Update</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
+
 </body>
 </html>
