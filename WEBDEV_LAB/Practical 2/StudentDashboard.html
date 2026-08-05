@@ -1,71 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 15px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px 12px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background:#f4f4f4;
-            }
-            header {
-            background:#333;
-            color:white;
-            padding:15px;
-            text-align:center;
-            }
 
-               nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 12px;
-            }
-              nav a:hover {
-                text-decoration: underline;
-            }
-              </style>
-              <header>
-    <h1>Student Dashboard</h1>
-    <nav>
-        <a href="Home.html">Home</a> | 
-        <a href="Login.html">Login</a> | 
-        <a href="StudentDashboard.html">Student Dashboard</a> | 
-        <a href="FacultyDashboard.html">Faculty Dashboard</a> | 
-        <a href="AdminDashboard.html">Admin Dashboard</a> | 
-        <a href="Courses.html">Courses</a> | 
-        <a href="Events.html">Events</a> | 
-        <a href="Forum.html">Forum</a> | 
-        <a href="CampusDirectory.html">Directory</a> | 
-        <a href="Profile.html">Profile</a>
+    <header>
+        <h1>Student Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
     </header>
-</nav>
-    <hr>
 
-    <h2>Welcome, Student!</h2>
-    
-    <h3>Attendance Summary</h3>
-    <table border="1">
-        <tr>
-            <th>Subject</th>
-            <th>Attendance</th>
-        </tr>
-        <tr>
-            <td>Web Design Fundamentals</td>
-            <td>85%</td>
-        </tr>
-        <tr>
-            <td>CN</td>
-            <td>90%</td>
-        </tr>
-    </table>
+    <main>
+        <h2>Welcome, Student!</h2>
 
-    <h3>Pending Assignments</h3>
-    <ul>
-        <li>WDF Practical 1 - Due Tomorrow</li>
-        <li>CN Lab Assignment 2 - Due Monday</li>
-    </ul>
+        <section>
+            <h3>Attendance Summary</h3>
+            <table>
+                <caption>Subject-wise attendance</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design Fundamentals</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>CN</td>
+                        <td>90%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Pending Assignments</h3>
+            <ul>
+                <li>WDF Practical 1 - Due Tomorrow</li>
+                <li>CN Lab Assignment 2 - Due Monday</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
+
 </body>
 </html>
