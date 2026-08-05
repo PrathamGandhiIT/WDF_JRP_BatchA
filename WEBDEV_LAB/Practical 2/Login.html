@@ -1,76 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>StudentHub - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 15px;
+        }
+        input, select {
+            padding: 5px;
+            margin-top: 3px;
+        }
+        button {
+            padding: 6px 14px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background:#f4f4f4;
-            }
-            header {
-            background:#333;
-            color:white;
-            padding:15px;
-            text-align:center;
-            }
 
-               nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 12px;
-            }
-              nav a:hover {
-                text-decoration: underline;
-            }
-              </style>
-              <header>
-    <h1>Login Here</h1>
-    <nav>
-        <a href="Home.html">Home</a> | 
-        <a href="Login.html">Login</a> | 
-        <a href="StudentDashboard.html">Student Dashboard</a> | 
-        <a href="FacultyDashboard.html">Faculty Dashboard</a> | 
-        <a href="AdminDashboard.html">Admin Dashboard</a> | 
-        <a href="Courses.html">Courses</a> | 
-        <a href="Events.html">Events</a> | 
-        <a href="Forum.html">Forum</a> | 
-        <a href="CampusDirectory.html">Directory</a> | 
-        <a href="Profile.html">Profile</a>
+    <header>
+        <h1>Login Here</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
     </header>
-</nav>
-    <hr>
 
-    <h2>Sign In</h2>
-    <form action="StudentDashboard.html" method="GET">
-        <p>
-            <label>Username / ID:</label><br>
-            <input type="text" name="username" required placeholder="e.g., 2026001">
-        </p>
-        <p>
-            <label>Password:</label><br>
-            <input type="password" name="password" required minlength="6" placeholder="At least 6 characters">
-        </p>
-        <p>
-            <label>Select Role:</label><br>
-            <select name="role" required>
-                <option value="">-- Choose Role --</option>
-                <option value="student">Student</option>
-                <option value="faculty">Faculty</option>
-                <option value="admin">Admin</option>
-            </select>
-        </p>
-        <p>
-            <button type="submit">Submit</button>
-        </p>
-    
-        </p>
-        <p>
-            <button  >Login</button>
-        </p>
-    </form>
+    <main>
+        <h2>Sign In</h2>
+        <form action="StudentDashboard.html" method="GET">
+            <p>
+                <label for="username">Username / ID:</label><br>
+                <input type="text" id="username" name="username" required placeholder="e.g., 2026001">
+            </p>
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters">
+            </p>
+            <p>
+                <label for="role">Select Role:</label><br>
+                <select id="role" name="role" required>
+                    <option value="">-- Choose Role --</option>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Login</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
+
 </body>
 </html>
