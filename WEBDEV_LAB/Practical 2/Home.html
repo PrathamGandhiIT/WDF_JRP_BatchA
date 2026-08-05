@@ -1,62 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>StudentHub - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 15px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-     <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background:#f4f4f4;
-            }
-            header {
-            background:#333;
-            color:white;
-            padding:15px;
-            text-align:center;
-            }
 
-               nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 12px;
-            }
-              nav a:hover {
-                text-decoration: underline;
-            }
-              </style>
-              <header>
-    <h1>Welcome to StudentHub</h1>
-    <nav>
-        <a href="Home.html">Home</a> | 
-        <a href="Login.html">Login</a> | 
-        <a href="StudentDashboard.html">Student Dashboard</a> | 
-        <a href="FacultyDashboard.html">Faculty Dashboard</a> | 
-        <a href="AdminDashboard.html">Admin Dashboard</a> | 
-        <a href="Courses.html">Courses</a> | 
-        <a href="Events.html">Events</a> | 
-        <a href="Forum.html">Forum</a> | 
-        <a href="CampusDirectory.html">Directory</a> | 
-        <a href="Profile.html">Profile</a>
+    <header>
+        <h1>Welcome to StudentHub</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
     </header>
-</nav>
-    <hr>
 
-    <h2>About StudentHub</h2>
-    <p>This is a single best portal for students, faculty, and admins to manage college life.</p>
+   
+        <section>
+            <h2>About StudentHub</h2>
+            <p>This is a single portal for students, faculty and admins to manage college life.</p>
+        </section>
+
+        <section>
+
+            
+        <section>
+            <h3>Upcoming Events</h3>
+            <p>Here are some events you might be interested in! </p>
+            <ul>
+                <li>Science Fair - 15th July</li>
+                <li>Sports Day - 20th August</li>
+                <li>Alumni Meet - 5th September</li>
+            </ul>
+
+        </section>  
+
+            <h3>Quick Features</h3>
+            <ul>
+                <li>Check attendance and marks</li>
+                <li>Download course resources</li>
+                <li>Join campus events</li>
+                <li>Discuss in community forum</li>
+            </ul>
+        </section>
+
+        <p><a href="Login.html">Click here to Login</a></p>
+   
+
     
-    <h3>Quick Features of student hub</h3>
-    <ul>
-        <li>Check attendance and marks</li>
-        <li>Download course resources</li>
-        <li>Join campus events</li>
-        <li>Discuss in community forum</li>
-    </ul>
-
-    <p><a href="Login.html">Click here to Login</a></p>
-
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
 
 </body>
 </html>
