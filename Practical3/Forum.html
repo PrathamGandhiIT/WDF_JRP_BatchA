@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Ask a Question</h2>
+            <form>
+                <p>
+                    <label for="topic">Topic:</label><br>
+                    <input type="text" id="topic" name="topic">
+                </p>
+                <p>
+                    <label for="question">Your Question:</label><br>
+                    <textarea id="question" name="question" rows="4" cols="30"></textarea>
+                </p>
+                <p>
+                    <button type="button">Post Question</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h3>Forum Categories</h3>
+            <div class="category-grid">
+                <div class="category-box">General</div>
+                <div class="category-box">Assignments</div>
+                <div class="category-box">Placements</div>
+                <div class="category-box">Events</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Recent Posts</h3>
+            <article>
+                <p><strong>User123:</strong> How to run Git commands in terminal?</p>
+                <p class="post-meta">Posted in General · 3 replies</p>
+            </article>
+            <article>
+                <p><strong>StudentA:</strong> Does anyone have notes for Practical 1?</p>
+                <p class="post-meta">Posted in Assignments · 5 replies</p>
+            </article>
+            <article>
+                <p><strong>RahulK:</strong> When is the last date to register for the Coding Competition?</p>
+                <p class="post-meta">Posted in Events · 2 replies</p>
+            </article>
+            <article>
+                <p><strong>PriyaS:</strong> Any tips for the upcoming placement drive?</p>
+                <p class="post-meta">Posted in Placements · 8 replies</p>
+            </article>
+        </section>
+
+        <section>
+            <h3>Forum Guidelines</h3>
+            <ul class="guideline-list">
+                <li>Be respectful to fellow students and faculty.</li>
+                <li>Search before posting to avoid duplicate questions.</li>
+                <li>Use clear titles so others can help you faster.</li>
+                <li>No spam or promotional posts.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
+
+</body>
+</html>
