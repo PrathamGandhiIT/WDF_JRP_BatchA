@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="facultydashboard.css">
+</head>
+<body>
+
+    <header>
+        <h1>Faculty Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome, Professor!</h2>
+        <p class="sub-text">Manage your classes and course material from here.</p>
+
+        <section class="quick-stats">
+            <div class="stat-box">
+                <h3>2</h3>
+                <p>Classes Assigned</p>
+            </div>
+            <div class="stat-box">
+                <h3>192</h3>
+                <p>Total Students</p>
+            </div>
+            <div class="stat-box">
+                <h3>6</h3>
+                <p>Materials Uploaded</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Upload Course Study Materials</h2>
+            <form>
+                <p>
+                    <label for="coursename">Course Name:</label><br>
+                    <input type="text" id="coursename" name="coursename">
+                </p>
+                <p>
+                    <label for="material">Upload File:</label><br>
+                    <input type="file" id="material" name="material">
+                </p>
+                <p>
+                    <button type="button">Upload Resource</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h3>Class List</h3>
+            <table>
+                <caption>Classes assigned this semester</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Class</th>
+                        <th scope="col">Students</th>
+                        <th scope="col">Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IT Semester 1</td>
+                        <td>82</td>
+                        <td>Web Design Fundamentals</td>
+                    </tr>
+                    <tr>
+                        <td>CE Semester 1</td>
+                        <td>110</td>
+                        <td>Computer Networks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Uploaded Materials</h3>
+            <ul class="material-list">
+                <li>📄 Unit 1 - Introduction to HTML.pdf</li>
+                <li>📄 Unit 2 - CSS Basics.pdf</li>
+                <li>📄 Practical 2 - Sample Solutions.docx</li>
+                <li>📄 Lab Manual - Semester 1.pdf</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Announcements to Students</h3>
+            <ul class="announcement-list">
+                <li><span class="tag">Update</span> Practical 3 submission extended to Friday.</li>
+                <li><span class="tag">Update</span> Extra lab session on Saturday for weak attendance students.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
+
+</body>
+</html>

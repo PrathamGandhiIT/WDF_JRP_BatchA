@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #3498db;
+}
+
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main > h2 {
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.sub-text {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.quick-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    min-width: 150px;
+    background-color: white;
+    text-align: center;
+    padding: 18px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.stat-box h3 {
+    margin: 0;
+    color: #3498db;
+    font-size: 1.6rem;
+}
+
+.stat-box p {
+    margin: 6px 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    color: white;
+}
+
+.badge.good {
+    background-color: #27ae60;
+}
+
+.badge.low {
+    background-color: #e67e22;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #fdf3e7;
+    border-left: 4px solid #e67e22;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 8px;
+}
+
+.link-list a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+}
