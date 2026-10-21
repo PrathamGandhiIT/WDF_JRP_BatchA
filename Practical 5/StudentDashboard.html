@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="studentdashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Dashboard</h1>
+        <button id="menuButton" class="menu-button">☰ Menu</button>
+        <button id="themeButton" class="theme-button">Dark Mode</button>
+        <nav id="navigation">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome, Student!</h2>
+        <p class="sub-text">Here is a quick summary of your academic activity.</p>
+
+        <section class="quick-stats">
+            <div class="stat-box">
+                <h3>87%</h3>
+                <p>Overall Attendance</p>
+            </div>
+            <div class="stat-box">
+                <h3>2</h3>
+                <p>Pending Assignments</p>
+            </div>
+            <div class="stat-box">
+                <h3>5</h3>
+                <p>Enrolled Subjects</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Attendance Summary</h3>
+            <table>
+                <caption>Subject-wise attendance</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Attendance</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design Fundamentals</td>
+                        <td>85%</td>
+                        <td><span class="badge good">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>90%</td>
+                        <td><span class="badge good">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td>72%</td>
+                        <td><span class="badge low">Low</span></td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>95%</td>
+                        <td><span class="badge good">Good</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Marks Overview</h3>
+            <table>
+                <caption>Latest test / assignment marks</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Test</th>
+                        <th scope="col">Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design Fundamentals</td>
+                        <td>Practical 2</td>
+                        <td>18 / 20</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>Mid Term</td>
+                        <td>34 / 50</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td>Quiz 3</td>
+                        <td>8 / 10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Pending Assignments</h3>
+            <ul class="task-list">
+                <li>WDF Practical 3 - Due Tomorrow</li>
+                <li>CN Lab Assignment 2 - Due Monday</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Weekly Timetable</h3>
+            <table>
+                <caption>Class schedule for this week</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10:00 AM</td>
+                        <td>Web Design Fundamentals</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>11:00 AM</td>
+                        <td>Computer Networks</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9:00 AM</td>
+                        <td>Data Structures</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Quick Links</h3>
+            <ul class="link-list">
+                <li><a href="Courses.html">View All Courses</a></li>
+                <li><a href="Events.html">See Upcoming Events</a></li>
+                <li><a href="Forum.html">Ask a Question in Forum</a></li>
+                <li><a href="Profile.html">Update My Profile</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudentHub College Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
