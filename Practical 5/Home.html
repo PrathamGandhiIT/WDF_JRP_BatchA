@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudentHub - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <!-- Notification Banner -->
+    <div id="notification" class="notification">
+        <span>Welcome to StudentHub! Check out the latest announcements.</span>
+        <button id="closeNotification">X</button>
+    </div>
+
+    <header>
+        <h1>Welcome to StudentHub</h1>
+
+        <!-- Hamburger Menu -->
+        <button id="menuButton" class="menu-button">☰ Menu</button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="StudentDashboard.html">Student Dashboard</a></li>
+                <li><a href="FacultyDashboard.html">Faculty Dashboard</a></li>
+                <li><a href="AdminDashboard.html">Admin Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Forum.html">Forum</a></li>
+                <li><a href="CampusDirectory.html">Directory</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+            </ul>
+        </nav>
+
+        <!-- Theme Switcher -->
+        <button id="themeButton" class="theme-button">Dark Mode</button>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2>One Portal. Every Part of College Life.</h2>
+                <p>Attendance, courses, events, and campus conversations — all in one place for students, faculty, and admins.</p>
+                <a href="Login.html" class="btn-primary">Login to Get Started</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Students walking on a college campus">
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-box">
+                <h3>5,000+</h3>
+                <p>Active Students</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>300+</h3>
+                <p>Faculty Members</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Courses Offered</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>100+</h3>
+                <p>Events Every Year</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>About StudentHub</h3>
+            <p>StudentHub is a single portal for students, faculty and admins to manage college life. From checking attendance to uploading study material and joining campus events, everything is available in one dashboard so nobody has to run between different offices or websites.</p>
+
+            <!-- Modal Button -->
+            <button id="learnMoreButton" class="js-button">
+                Learn More
+            </button>
+        </section>
+
+        <section class="role-cards">
+            <h3>Who is StudentHub For?</h3>
+
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card-emoji">🎓</span>
+                    <h4>Students</h4>
+                    <p>Track attendance, view marks, download resources, and stay on top of assignments.</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-emoji">📚</span>
+                    <h4>Faculty</h4>
+                    <p>Upload study material, manage class lists, and post announcements to students.</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-emoji">🛠️</span>
+                    <h4>Admins</h4>
+                    <p>Oversee students and faculty, manage courses, and view college-wide reports.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <h3>How It Works</h3>
+
+            <div class="step-grid">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h4>Login</h4>
+                    <p>Sign in with your student, faculty, or admin account.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h4>Explore</h4>
+                    <p>Check your dashboard, courses, and upcoming events.</p>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h4>Engage</h4>
+                    <p>Post on the forum, register for events, and stay connected.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Quick Features</h3>
+
+            <ul class="feature-list">
+                <li>✔ Check attendance and marks</li>
+                <li>✔ Download course resources</li>
+                <li>✔ Join campus events</li>
+                <li>✔ Discuss in community forum</li>
+                <li>✔ Update your profile anytime</li>
+            </ul>
+        </section>
+
+        <section class="announcements">
+            <h3>Latest Announcements</h3>
+
+            <ul class="announcement-list">
+                <li><span class="tag">Notice</span> Semester fee payment deadline extended to 20th August.</li>
+                <li><span class="tag">Notice</span> Library will remain open till 9 PM during exam week.</li>
+                <li><span class="tag">Notice</span> New elective courses added — check the Courses page.</li>
+                <li><span class="tag">Notice</span> Wi-Fi maintenance on Sunday from 6 AM to 9 AM.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Upcoming Events</h3>
+
+            <p>Here are some events you might be interested in!</p>
+
+            <ul>
+                <li>Science Fair - 15th July</li>
+                <li>Sports Day - 20th August</li>
+                <li>Alumni Meet - 5th September</li>
+                <li>Cultural Fest - 18th September</li>
+            </ul>
+        </section>
+
+
+        <!-- Content Slider -->
+        <section class="content-slider">
+
+            <h3>StudentHub Highlights</h3>
+
+            <div class="slider-container">
+
+                <div class="slide active">
+                    <h4>📚 Learn</h4>
+                    <p>
+                        Access your courses, notes and learning resources
+                        from one place.
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <h4>🎉 Participate</h4>
+                    <p>
+                        Discover upcoming college events and participate
+                        in activities.
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <h4>💬 Connect</h4>
+                    <p>
+                        Join the community forum and connect with students
+                        and faculty.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="slider-buttons">
+                <button id="previousSlide">Previous</button>
+                <button id="nextSlide">Next</button>
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="faq">
+
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How do I access my dashboard?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Login using your registered account and access
+                        the dashboard according to your role.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can students download course resources?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. Students can download available notes and
+                        course resources from the Courses section.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I register for an event?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Open the Events page and select the event you
+                        want to participate in.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I update my profile?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. Open your Profile page and update the
+                        available information.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="testimonials">
+            <h3>What People Say</h3>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial">
+                    <p>"StudentHub made it so easy to track my attendance and download notes in one place."</p>
+                    <p class="testimonial-name">— Pratham, Second Year Student</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"Uploading study material and updating my class list takes only a few minutes now."</p>
+                    <p class="testimonial-name">— Prof. Patel, Computer Engineering</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="contact-box">
+            <h3>Need Help?</h3>
+
+            <p>
+                Email us at <strong>support@studenthub.edu</strong>
+                or call the college office at <strong>+91 98765 43210</strong>.
+            </p>
+        </section>
+
+        <p class="login-cta">
+            <a href="Login.html">Click here to Login</a>
+        </p>
+
+    </main>
+
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-modal">X</button>
+
+            <h3>About StudentHub</h3>
+
+            <p>
+                StudentHub brings students, faculty and administrators
+                together through one college portal.
+            </p>
+
+            <p>
+                Students can manage attendance, courses, events,
+                resources and campus communication from one place.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>StudentHub College Portal</p>
+
+        <p class="footer-links">
+            <a href="CampusDirectory.html">Contact</a> ·
+            <a href="Events.html">Events</a> ·
+            <a href="Forum.html">Forum</a>
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
