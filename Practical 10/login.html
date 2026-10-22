@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 10 - StudentHub Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-card">
+        <h2>StudentHub Login</h2>
+        <p class="subtitle">Practical 10: Secure Sessions & Role-Based Access</p>
+
+        <form id="loginForm" method="POST" action="login.php">
+            <div class="form-group">
+                <label for="identifier">Username or Email:</label>
+                <input type="text" id="identifier" name="identifier" required placeholder="Enter username or email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+
+            <div class="remember-row">
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+
+            <button type="submit" class="btn-login">Sign In</button>
+        </form>
+    </div>
+</div>
+<script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Practical 10: Login Stylesheet */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+}
+
+.login-card h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #1a365d;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #718096;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.remember-row {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.remember-row input {
+    margin-right: 6px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #3182ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-login:hover {
+    background: #2b6cb0;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.alert.error {
+    background: #fed7d7;
+    color: #742a2a;
+    border-left: 4px solid #e53e3e;
+}
+
+.alert.success {
+    background: #c6f6d5;
+    color: #22543d;
+    border-left: 4px solid #38a169;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 9 - Secure User Registration</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 40px 20px; }
+        .reg-card { max-width: 500px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        h2 { margin-top: 0; color: #1a365d; text-align: center; }
+        p.subtitle { text-align: center; color: #718096; margin-bottom: 25px; font-size: 14px; }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; margin-bottom: 6px; font-weight: 600; color: #4a5568; font-size: 14px; }
+        input, select { width: 100%; padding: 10px 12px; border: 1px solid #cbd5e0; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+        input:focus, select:focus { outline: none; border-color: #3182ce; box-shadow: 0 0 0 3px rgba(49,130,206,0.2); }
+        .error-feedback { color: #e53e3e; font-size: 12px; margin-top: 4px; display: none; }
+        .btn-submit { width: 100%; padding: 12px; background: #2b6cb0; color: #fff; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .btn-submit:hover { background: #2c5282; }
+    </style>
+</head>
+<body>
+<div class="reg-card">
+    <h2>Student Registration</h2>
+    <p class="subtitle">Practical 9: Secure Registration with Validation & Password Hashing</p>
+
+    <form id="registrationForm" method="POST" action="Register.php">
+        <div class="form-group">
+            <label for="enrollment">Enrollment Number:</label>
+            <input type="text" id="enrollment" name="enrollment" placeholder="e.g. 25DIT018" required>
+            <span class="error-feedback" id="enrollmentError">Enrollment number is required.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Pratham Gandhi" required>
+            <span class="error-feedback" id="nameError">Full name must only contain letters.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="e.g. pratham_g" required>
+            <span class="error-feedback" id="usernameError">Username must be at least 4 characters.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. student@charusat.edu.in" required>
+            <span class="error-feedback" id="emailError">Please enter a valid email.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" required>
+            <span class="error-feedback" id="mobileError">Mobile number must be exactly 10 digits.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="At least 6 characters" required>
+            <span class="error-feedback" id="passwordError">Password must be at least 6 characters long.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+            </select>
+            <span class="error-feedback" id="courseError">Please select a course.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year" required>
+                <option value="1">1st Year</option>
+                <option value="2" selected>2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Register Now</button>
+    </form>
+</div>
+
+<script src="Register.js"></script>
+</body>
+</html>
