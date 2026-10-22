@@ -1,0 +1,88 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #003366;
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #cfe8ff;
+}
+
+.register {
+    width: 80%;
+    max-width: 650px;
+    margin: 25px auto 10px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.register h1 {
+    color: #003366;
+    margin: 0 0 8px;
+}
+
+.form {
+    width: 550px;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2d3748;
+    font-size: 14px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"],
+.form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+}
+
+.form button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background-color: #0055aa;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 6 - Dynamic JSON Data Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>StudentHub - Events Directory</h1>
+      <p class="subtitle">Rendering external JSON data via Fetch API with search, filter, sorting, and pagination</p>
+    </header>
+
+    <div class="controls-panel">
+      <div class="search-box">
+        <label for="searchInput">Search Events:</label>
+        <input type="text" id="searchInput" placeholder="Search by title or venue...">
+      </div>
+
+      <div class="filter-box">
+        <label for="categoryFilter">Category:</label>
+        <select id="categoryFilter">
+          <option value="All">All Categories</option>
+          <option value="Technical">Technical</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Cultural">Cultural</option>
+          <option value="Sports">Sports</option>
+        </select>
+      </div>
+
+      <div class="sort-box">
+        <label for="sortBy">Sort By:</label>
+        <select id="sortBy">
+          <option value="date-asc">Date (Ascending)</option>
+          <option value="date-desc">Date (Descending)</option>
+          <option value="title-asc">Title (A-Z)</option>
+          <option value="seats-desc">Seats (High to Low)</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="loading" class="status-msg">Loading events data...</div>
+    <div id="error" class="status-msg error-msg" style="display:none;"></div>
+
+    <div class="table-responsive">
+      <table id="eventsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Event Title</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Seats</th>
+          </tr>
+        </thead>
+        <tbody id="eventsBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination-panel">
+      <button id="prevBtn" disabled>&laquo; Previous</button>
+      <span id="pageInfo">Page 1 of 1</span>
+      <button id="nextBtn">Next &raquo;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

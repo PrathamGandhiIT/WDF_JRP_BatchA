@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - StudentHub (Practical 15)</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="Home.html">Home</a>
+    <a href="dashboard.php">Student Dashboard</a>
+    <a href="admin_dashboard.php">Admin Dashboard</a>
+    <a href="Register.html">Register</a>
+    <a href="login.php">Login</a>
+</nav>
+
+<div class="login">
+    <h1>StudentHub Login</h1>
+    <p>Sign in with your credentials to access your dashboard (Practical 15)</p>
+</div>
+
+<div class="form">
+    <form action="login.php" method="post" id="loginForm">
+        <label for="identity">Enrollment Number, Username, or Email</label>
+        <input type="text" id="identity" name="identity" placeholder="e.g. 25DIT001 or admin" required>
+
+        <br><br>
+
+        <label for="password">Password</label>
+        <div class="passwordBox">
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <button type="button" id="showPassword" title="Show/Hide Password">&#x1F441;</button>
+        </div>
+
+        <br><br>
+
+        <button type="submit">Login</button>
+        <button type="reset">Clear</button>
+    </form>
+</div>
+
+<p style="text-align: center; font-size: 14px; margin-top: 15px;">
+    Need an account? <a href="Register.html" style="color: #003366; font-weight: bold;">Register Here</a>
+</p>
+
+<script src="Login.js"></script>
+
+</body>
+</html>

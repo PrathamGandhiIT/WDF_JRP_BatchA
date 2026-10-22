@@ -1,0 +1,166 @@
+body {
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #1a365d;
+  font-size: 26px;
+}
+
+.subtitle {
+  color: #718096;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.controls-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.controls-panel label {
+  font-weight: bold;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.controls-panel input, .controls-panel select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.search-box {
+  flex: 2;
+  min-width: 200px;
+}
+
+.search-box input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-box, .sort-box {
+  flex: 1;
+  min-width: 160px;
+}
+
+.filter-box select, .sort-box select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+th {
+  background-color: #2b6cb0;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+tr:hover {
+  background-color: #edf2f7;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-Technical { background: #bee3f8; color: #2b6cb0; }
+.badge-Workshop { background: #feebc8; color: #c05621; }
+.badge-Cultural { background: #fed7e2; color: #b83280; }
+.badge-Sports { background: #c6f6d5; color: #276749; }
+
+.status-msg {
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #4a5568;
+}
+
+.error-msg {
+  color: #e53e3e;
+  background-color: #fff5f5;
+  border-radius: 4px;
+  border: 1px solid #feb2b2;
+}
+
+.pagination-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pagination-panel button {
+  padding: 8px 16px;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.pagination-panel button:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.pagination-panel span {
+  font-size: 14px;
+  color: #4a5568;
+}

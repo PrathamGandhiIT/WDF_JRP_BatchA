@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - StudentHub Portal (Practical 14)</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="login.php">Home</a>
+        <a href="Dashboard.php">Dashboard</a>
+        <a href="Register.html">Register</a>
+        <a href="login.php" id="LoginLogout">Login</a>
+    </div>
+
+    <div class="login">
+        <h1>StudentHub Portal Login</h1>
+        <p>Enter your Enrollment Number and Password (Practical 14)</p>
+    </div>
+
+    <div class="form">
+        <form id="loginForm" action="login.php" method="POST">
+            <label for="identity">Enrollment Number / User ID</label>
+            <input type="text" id="identity" name="identity"
+                   placeholder="e.g. 25DIT001 or admin"
+                   required>
+
+            <br><br>
+
+            <label for="password">Password</label>
+            <div class="passwordBox">
+                <input type="password" id="password" name="password" placeholder="e.g. raj123 / admin123" required>
+                <button type="button" id="showPassword" title="Toggle visibility">&#x1F441;</button>
+            </div>
+
+            <br>
+
+            <label>
+                <input type="checkbox" name="remember" value="yes">
+                Remember Me
+            </label>
+
+            <br><br>
+
+            <button type="submit">Login</button>
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+
+    <p style="text-align: center; font-size: 14px; margin-top: 15px;">
+        New user? <a href="Register.html" style="color: #003366; font-weight: bold;">Create an account here</a>
+    </p>
+
+    <script src="Login.js"></script>
+</body>
+</html>

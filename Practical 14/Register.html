@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Practical 14</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="login.php">Home</a>
+    <a href="Dashboard.php">Dashboard</a>
+    <a href="events.php">Events</a>
+    <a href="Register.html">Register</a>
+    <a href="login.php">Login</a>
+</div>
+
+<div class="register">
+    <h1>Student Registration Portal</h1>
+    <p>Fill in the form to register your StudentHub account (Practical 14 - Raj & Manish)</p>
+</div>
+
+<div class="form">
+
+<form id="registerForm" action="Register.php" method="POST">
+    
+<label for="enrollment_number">Enrollment Number / User ID *</label>
+<input type="text" id="enrollment_number" name="enrollment_number" placeholder="e.g. 25DIT001" pattern="[0-9]{2}[A-Za-z]{3}[0-9]{3}" title="Enter an ID like 25DIT001" required>
+
+<label for="name">Full Name *</label>
+<input type="text" id="name" name="name" placeholder="e.g. Raj Patel" required>
+
+<label for="username">Username *</label>
+<input type="text" id="username" name="username" placeholder="e.g. raj_patel" required>
+
+<label for="email">Email Address *</label>
+<input type="email" id="email" name="email" placeholder="e.g. raj.patel@charusat.edu.in" required>
+
+<label for="mobile">Mobile Number *</label>
+<input type="tel" id="mobile" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+<label for="password">Password *</label>
+<input type="password" id="password" name="password" placeholder="Create password" required>
+
+<label for="confirmPassword">Confirm Password *</label>
+<input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+
+<label for="course">Course *</label>
+<select id="course" name="course" required>
+    <option value="">Select Course</option>
+    <option value="DIT">DIT</option>
+    <option value="BCA">BCA</option>
+    <option value="B.Tech">B.Tech</option>
+    <option value="MCA">MCA</option>
+</select>
+
+<label for="year">Year *</label>
+<select id="year" name="year" required>
+    <option value="">Select Year</option>
+    <option value="1">First Year</option>
+    <option value="2">Second Year</option>
+    <option value="3">Third Year</option>
+    <option value="4">Fourth Year</option>
+</select>
+
+<label>Gender *</label>
+<div class="gender" style="margin: 10px 0;">
+    <label style="display:inline; margin-right: 15px;">
+        <input type="radio" name="gender" value="Male" checked> Male
+    </label>
+    <label style="display:inline;">
+        <input type="radio" name="gender" value="Female"> Female
+    </label>
+</div>
+
+<label class="terms" style="display:block; margin: 15px 0;">
+    <input type="checkbox" id="terms" name="terms" value="yes" required>
+    I agree to the Terms and Conditions
+</label>
+
+<div class="buttons" style="margin-top: 15px;">
+    <button type="submit">Submit Registration</button>
+    <button type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+
+<div class="benefits">
+    <h2>Portal Privileges</h2>
+    <table>
+        <tr>
+            <th>Service Offered</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Role-Based Dashboard Access</td>
+            <td>&#10004; Active</td>
+        </tr>
+        <tr>
+            <td>Live Weather Tracking (Changa)</td>
+            <td>&#10004; Active</td>
+        </tr>
+        <tr>
+            <td>Campus Event Schedule</td>
+            <td>&#10004; Active</td>
+        </tr>
+        <tr>
+            <td>Security Audit Trail</td>
+            <td>&#10004; Active</td>
+        </tr>
+    </table>
+</div>
+
+<div class="footer">
+    <p>Already registered? <a href="login.php" style="color: #90cdf4;">Proceed to Login</a></p>
+</div>
+
+</body>
+</html>

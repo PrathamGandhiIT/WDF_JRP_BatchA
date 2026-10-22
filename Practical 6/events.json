@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Hackathon 2026", "category": "Technical", "date": "2026-11-15", "venue": "Seminar Hall A", "seats": 120 },
+  { "id": 2, "title": "Web Dev Workshop", "category": "Workshop", "date": "2026-11-18", "venue": "Lab 301", "seats": 60 },
+  { "id": 3, "title": "AI & ML Summit", "category": "Technical", "date": "2026-11-20", "venue": "Auditorium", "seats": 250 },
+  { "id": 4, "title": "Campus Cultural Fest", "category": "Cultural", "date": "2026-12-01", "venue": "Central Ground", "seats": 500 },
+  { "id": 5, "title": "Cyber Security Conclave", "category": "Technical", "date": "2026-12-05", "venue": "Seminar Hall B", "seats": 100 },
+  { "id": 6, "title": "Inter-College Cricket League", "category": "Sports", "date": "2026-12-10", "venue": "Sports Arena", "seats": 80 },
+  { "id": 7, "title": "Resume & Career BootCamp", "category": "Workshop", "date": "2026-12-14", "venue": "Lab 202", "seats": 75 },
+  { "id": 8, "title": "Robotics Challenge", "category": "Technical", "date": "2026-12-18", "venue": "Tech Park", "seats": 90 },
+  { "id": 9, "title": "Annual Music Night", "category": "Cultural", "date": "2026-12-22", "venue": "Auditorium", "seats": 400 },
+  { "id": 10, "title": "Chess Championship", "category": "Sports", "date": "2026-12-24", "venue": "Activity Hall", "seats": 50 },
+  { "id": 11, "title": "Cloud Computing Hands-on", "category": "Workshop", "date": "2027-01-05", "venue": "Lab 105", "seats": 65 },
+  { "id": 12, "title": "Photography Exhibition", "category": "Cultural", "date": "2027-01-10", "venue": "Art Gallery", "seats": 150 },
+  { "id": 13, "title": "Data Science Symposium", "category": "Technical", "date": "2027-01-15", "venue": "Seminar Hall A", "seats": 110 },
+  { "id": 14, "title": "Table Tennis Cup", "category": "Sports", "date": "2027-01-20", "venue": "Indoor Stadium", "seats": 40 },
+  { "id": 15, "title": "Startup Pitch Fest", "category": "Workshop", "date": "2027-01-25", "venue": "Incubation Center", "seats": 85 }
+]
