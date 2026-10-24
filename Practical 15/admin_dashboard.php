@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 15: Admin Dashboard
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 requireRole("admin");
 require_once "db.php";

@@ -1,9 +1,4 @@
 <?php
-/**
- * Practical 15: Role-Based Authentication & Guard System
- * Author: Raj Patel & Manish Kumar
- */
-
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

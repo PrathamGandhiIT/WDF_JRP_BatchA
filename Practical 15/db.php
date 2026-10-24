@@ -1,9 +1,4 @@
 <?php
-/**
- * Practical 15: StudentHub Database Connection
- * Author: Raj Patel & Manish Kumar
- */
-
 $host = "localhost";
 $username = "root";
 $password = "";

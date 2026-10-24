@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 14: Navigation Bar Component
- * Author: Raj Patel & Manish Kumar
- */
 $role = strtolower((string) ($_SESSION["role"] ?? "student"));
 ?>
 <nav class="navbar">

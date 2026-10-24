@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 15: Student Management for Administrators
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 requireRole("admin");
 require_once "db.php";

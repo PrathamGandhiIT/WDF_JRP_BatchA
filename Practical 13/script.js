@@ -1,8 +1,3 @@
-/**
- * Practical 13: Asynchronous Event Management Client Logic
- * Author: Raj Patel & Manish Kumar
- */
-
 const apiUrl = "api.php";
 
 const form = document.getElementById("eventForm");

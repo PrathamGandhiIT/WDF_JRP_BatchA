@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 14: Secure Login Handler
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 
 // If already logged in, redirect directly to dashboard

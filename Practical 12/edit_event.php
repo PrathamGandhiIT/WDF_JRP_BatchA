@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 12: Edit Event with Poster Update
- * Author: Raj Patel & Manish Kumar
- */
 require "admin_check.php";
 require "db.php";
 

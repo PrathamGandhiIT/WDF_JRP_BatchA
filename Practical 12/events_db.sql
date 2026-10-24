@@ -1,6 +1,3 @@
--- Practical 12 Database Setup
--- Author: Raj Patel & Manish Kumar
-
 CREATE DATABASE IF NOT EXISTS events_db;
 USE events_db;
 

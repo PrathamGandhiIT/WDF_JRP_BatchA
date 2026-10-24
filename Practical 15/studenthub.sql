@@ -1,6 +1,3 @@
--- Practical 15 Database Setup Script
--- Author: Raj Patel & Manish Kumar
-
 CREATE DATABASE IF NOT EXISTS studenthub;
 USE studenthub;
 

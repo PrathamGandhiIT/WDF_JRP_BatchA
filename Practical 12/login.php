@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 12: Admin Authentication for Event Management
- * Author: Raj Patel & Manish Kumar
- */
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

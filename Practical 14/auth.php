@@ -1,9 +1,4 @@
 <?php
-/**
- * Practical 14: Authentication & Authorization Middleware
- * Author: Raj Patel & Manish Kumar
- */
-
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

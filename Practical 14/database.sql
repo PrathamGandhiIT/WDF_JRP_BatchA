@@ -1,6 +1,3 @@
--- Practical 14: Comprehensive Database Setup
--- Author: Raj Patel & Manish Kumar
-
 -- 1. Create studenthub database
 CREATE DATABASE IF NOT EXISTS studenthub;
 USE studenthub;

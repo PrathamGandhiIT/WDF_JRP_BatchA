@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 12: Delete Event with Poster File Cleanup
- * Author: Raj Patel & Manish Kumar
- */
 require "admin_check.php";
 require "db.php";
 

@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 14: Logout Script
- * Author: Raj Patel & Manish Kumar
- */
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

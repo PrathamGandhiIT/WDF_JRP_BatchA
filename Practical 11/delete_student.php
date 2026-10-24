@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 11: Delete Student Record
- * Author: Raj Patel & Manish Kumar
- */
 require_once "db.php";
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {

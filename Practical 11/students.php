@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 11: Student Management System
- * Author: Raj Patel & Manish Kumar
- */
 require_once "db.php";
 
 $search = trim($_GET["search"] ?? "");

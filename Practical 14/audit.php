@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 14: Audit Trail Log
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 requireAdmin();
 require_once "db.php";

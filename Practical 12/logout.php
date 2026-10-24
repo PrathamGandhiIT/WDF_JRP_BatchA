@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 12: Admin Logout
- * Author: Raj Patel & Manish Kumar
- */
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

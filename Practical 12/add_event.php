@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 12: Add New Event with Poster Upload
- * Author: Raj Patel & Manish Kumar
- */
 require "admin_check.php";
 require "db.php";
 

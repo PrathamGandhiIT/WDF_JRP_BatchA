@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 11: Add Student Record
- * Author: Raj Patel & Manish Kumar
- */
 require_once "db.php";
 
 $error = "";

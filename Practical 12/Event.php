@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 12: Public Events Listing
- * Author: Raj Patel & Manish Kumar
- */
 require "db.php";
 
 $result = $conn->query(

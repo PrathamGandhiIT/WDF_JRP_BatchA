@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 13: Asynchronous Event CRUD RESTful API
- * Author: Raj Patel & Manish Kumar
- */
 header("Content-Type: application/json; charset=UTF-8");
 
 if (file_exists(__DIR__ . "/db.php")) {

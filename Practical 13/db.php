@@ -1,9 +1,4 @@
 <?php
-/**
- * Practical 13: Database Connection for Events API
- * Author: Raj Patel & Manish Kumar
- */
-
 $host = "localhost";
 $username = "root";
 $password = "";

@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 14: Student Dashboard
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 requireLogin();
 

@@ -1,9 +1,4 @@
 <?php
-/**
- * Practical 11: Database Connection Configuration
- * Author: Raj Patel
- */
-
 $host = "localhost";
 $username = "root";
 $password = "";

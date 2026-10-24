@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 15: Student Registration Processor
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {

@@ -1,9 +1,4 @@
 <?php
-/**
- * Practical 14: Multi-Database Connections (studenthub & events_db)
- * Author: Raj Patel & Manish Kumar
- */
-
 $host = "localhost";
 $username = "root";
 $password = "";

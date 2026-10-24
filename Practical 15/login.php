@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 15: User Authentication & Role Redirection
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 
 // 1-Click Evaluation shortcut

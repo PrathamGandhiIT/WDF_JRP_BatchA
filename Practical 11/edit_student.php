@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 11: Edit Student Record
- * Author: Raj Patel & Manish Kumar
- */
 require_once "db.php";
 
 $id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);

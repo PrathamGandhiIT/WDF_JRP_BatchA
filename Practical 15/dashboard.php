@@ -1,8 +1,4 @@
 <?php
-/**
- * Practical 15: Student Dashboard
- * Author: Raj Patel & Manish Kumar
- */
 require_once "auth.php";
 requireRole("student");
 require_once "db.php";

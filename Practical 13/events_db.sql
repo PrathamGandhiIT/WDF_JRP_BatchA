@@ -1,6 +1,3 @@
--- Practical 13: Database Setup for AJAX Event CRUD
--- Author: Raj Patel & Manish Kumar
-
 CREATE DATABASE IF NOT EXISTS events_db;
 USE events_db;
 
